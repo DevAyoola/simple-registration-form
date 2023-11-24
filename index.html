@@ -3,16 +3,16 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Account Login</title>
+		<title>Simple Registration Form</title>
 		<link rel="stylesheet" type="text/css" href="./style.css" />
 	</head>
 	<body>
 		<section>
 			<div class="wrapper">
-				<h3>Account Login</h3>
+				<h3>Registration Form</h3>
 				<form>
 					<div class="form-sub">
-						<label for="name">Username</label>
+						<label for="name">Name</label>
 						<br />
 						<input
 							type="text"
@@ -23,24 +23,36 @@
 						/>
 					</div>
 					<div class="form-sub">
-						<div style="display: inline">
-							<label for="password">Password </label
-							><a href="#" class="align-end">Forgot Password?</a>
-						</div>
+						<label for="email">Email</label>
 						<br />
 						<input
-							type="password"
-							name="password"
-							placeholder="Password"
-							id="password"
+							type="email"
+							name="email"
+							placeholder="johnmark@email.com"
+							id="email"
 							required
 						/>
 					</div>
-					<input type="submit" value="Login" />
+					<div class="form-sub">
+						<label for="phonenum">Phone Number</label>
+						<br />
+						<input
+							type="tel"
+							name="phonenum"
+							placeholder="07080300705"
+							id="phonenum"
+							required
+						/>
+					</div>
+					<div class="form-sub">
+						<label for="name">Male</label>
+						<input type="radio" name="gender" value="male" id="male" />
+						<label for="name">Female</label>
+						<input type="radio" name="gender" value="female" id="female" />
+					</div>
+					<br />
+					<input type="submit" value="Register" />
 				</form>
-				<p class="align-center">
-					Don't have account? <a href="#">Create new account</a>
-				</p>
 			</div>
 		</section>
 	</body>

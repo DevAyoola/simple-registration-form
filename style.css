@@ -37,7 +37,8 @@ section {
 }
 
 .wrapper form input[type="text"],
-.wrapper form input[type="password"] {
+.wrapper form input[type="email"],
+.wrapper form input[type="tel"] {
 	height: 45px;
 	width: 100%;
 	border: 1px solid #dee0e4;
@@ -63,16 +64,6 @@ section {
 .wrapper form input[type="submit"]:hover {
 	background-color: #2868c7;
 	transition: background-color 0.2s;
-}
-
-.align-end {
-	float: right;
-	margin-right: 0 auto;
-	text-align: right;
-}
-
-.align-center {
-	text-align: center;
 }
 
 @media screen and (max-width: 576px) {
